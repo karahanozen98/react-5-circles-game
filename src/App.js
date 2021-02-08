@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Game from "./components/Game";
+import Menu from "./components/Menu";
+import WithComponent from "./components/withComponent";
+import styles from "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [index, changeIndex] = useState(0);
+  const [difficulty, changeDifficulty] = useState(10);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <WithComponent
+          index={index}
+          changeIndex={changeIndex}
+          difficulty={difficulty}
+          changeDifficulty={changeDifficulty}
+        />
+      </div>
     </div>
   );
 }
