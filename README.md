@@ -1,3 +1,6 @@
+# The game
+<img src="./screenshots/1.PNG">/<img><br>
+<img src="./screenshots/2.PNG">/<img>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
